@@ -1,13 +1,13 @@
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, Text, Pressable } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import { appColors } from "../../constants";
 
 export default function OutlinedButtonIcon({ onPress, text, iconName }) {
     return (
-        <TouchableOpacity onPress={onPress} style={outlinedButtonIconStyles.outlinedButtonIcon}>
+        <Pressable onPress={onPress} style={outlinedButtonIconStyles.outlinedButtonIcon} android_ripple={{color: 'rgba(13, 13, 11, .2)'}}>
             <Icon color={appColors.secondaryColor} name={iconName} size={16}/>
             <Text style={outlinedButtonIconStyles.outlinedButtonIconText}>{text}</Text>
-        </TouchableOpacity>
+        </Pressable>
     );
 };
 

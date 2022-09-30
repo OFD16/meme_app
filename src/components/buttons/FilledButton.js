@@ -1,11 +1,11 @@
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, Text, Pressable } from "react-native";
 import { appColors } from "../../constants";
 
 export default function FilledButton({ onPress, text }) {
     return (
-        <TouchableOpacity onPress={onPress} style={filledButtonStyles.filledButton}>
+        <Pressable onPress={onPress} style={filledButtonStyles.filledButton} android_ripple={{color: 'rgba(242, 242, 242, .6)'}}>
             <Text style={filledButtonStyles.filledButtonText}>{text}</Text>
-        </TouchableOpacity>
+        </Pressable>
     );
 };
 

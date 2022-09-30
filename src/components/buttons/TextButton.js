@@ -1,11 +1,11 @@
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, Text, Pressable } from "react-native";
 import { appColors } from "../../constants";
 
 export default function TextButton({ onPress, text }) {
     return (
-        <TouchableOpacity onPress={onPress} style={textButtonStyles.textButton}>
+        <Pressable onPress={onPress} style={textButtonStyles.textButton} android_ripple={{color: 'rgba(13, 13, 11, .2)'}}>
             <Text style={textButtonStyles.textButtonText}>{text}</Text>
-        </TouchableOpacity>
+        </Pressable>
     );
 };
 

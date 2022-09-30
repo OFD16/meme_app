@@ -7,7 +7,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 
 export default function SignUpScreen() {
 
-  const localImage = require("./assets/Login.png");
+  const localImage = require("../../assets/Login.png");
   const [email , setEmail] = useState('');
   const [password , setPassword] = useState('');
   const [name , setName] = useState('');

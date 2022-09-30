@@ -10,6 +10,8 @@ export default function SignUpScreen() {
   const localImage = require("./assets/Login.png");
   const [email , setEmail] = useState('');
   const [password , setPassword] = useState('');
+  const [name , setName] = useState('');
+  const [surname , setSurname] = useState('');
   const [isSelected, setSelection] = useState(false);
   return (
     
@@ -28,7 +30,7 @@ export default function SignUpScreen() {
         style={styles.search}
         placeholder='İsim'
         placeholderTextColor={'rgba(13, 13, 11, 0.6)'}
-        onChangeText={(val) => setPassword(val)}
+        onChangeText={(val) => setName(val)}
         />
         
       </View>
@@ -39,7 +41,7 @@ export default function SignUpScreen() {
         style={styles.search}
         placeholder='Soyisim'
         placeholderTextColor={'rgba(13, 13, 11, 0.6)'}
-        onChangeText={(val) => setPassword(val)}
+        onChangeText={(val) => setSurname(val)}
         />
         
       </View>

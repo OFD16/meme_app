@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a913850-51f1-48a0-815f-fa13109b7555" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/screens/EditProfileScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/HomeScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/LoginScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/ProfileScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/SignUpScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/UploadSoundScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +31,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "nodejs_package_manager_path": "npm",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="meme_app" />
@@ -181,6 +180,9 @@
       <option name="presentableId" value="Default" />
       <updated>1664380874803</updated>
       <workItem from="1664380874805" duration="1306000" />
+      <workItem from="1664383845114" duration="2943000" />
+      <workItem from="1664387354276" duration="92000" />
+      <workItem from="1664387459898" duration="266000" />
     </task>
     <servers />
   </component>

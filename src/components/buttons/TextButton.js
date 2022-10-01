@@ -1,11 +1,16 @@
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Text, Pressable, View } from "react-native";
 import { appColors } from "../../constants";
 
 export default function TextButton({ onPress, text }) {
     return (
-        <Pressable onPress={onPress} style={textButtonStyles.textButton} android_ripple={{color: 'rgba(13, 13, 11, .2)'}}>
-            <Text style={textButtonStyles.textButtonText}>{text}</Text>
-        </Pressable>
+        <View style={{borderRadius: 8, overflow: "hidden"}}>
+            <Pressable
+                onPress={onPress}
+                style={textButtonStyles.textButton}
+                android_ripple={{ color: 'rgba(13, 13, 11, .2)' }}>
+                <Text style={textButtonStyles.textButtonText}>{text}</Text>
+            </Pressable>
+        </View>
     );
 };
 
@@ -21,5 +26,5 @@ const textButtonStyles = StyleSheet.create({
         fontSize: 14,
         fontWeight: "500",
         color: appColors.secondaryColor,
-    }
+    },
 });

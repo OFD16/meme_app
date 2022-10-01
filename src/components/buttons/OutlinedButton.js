@@ -1,11 +1,13 @@
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Text, Pressable, View } from "react-native";
 import { appColors } from "../../constants";
 
 export default function OutlinedButton({ onPress, text }) {
     return (
-        <Pressable onPress={onPress} style={outlinedButtonStyles.outlinedButton} android_ripple={{color: 'rgba(13, 13, 11, .2)'}}>
-            <Text style={outlinedButtonStyles.outlinedButtonText}>{text}</Text>
-        </Pressable>
+        <View style={{ borderRadius: 8, overflow: "hidden" }}>
+            <Pressable onPress={onPress} style={outlinedButtonStyles.outlinedButton} android_ripple={{ color: 'rgba(13, 13, 11, .2)' }}>
+                <Text style={outlinedButtonStyles.outlinedButtonText}>{text}</Text>
+            </Pressable>
+        </View>
     );
 };
 

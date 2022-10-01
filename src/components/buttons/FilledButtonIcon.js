@@ -1,13 +1,15 @@
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Text, Pressable, View } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import { appColors } from "../../constants";
 
 export default function FilledButtonIcon({ onPress, text, iconName }) {
     return (
-        <Pressable onPress={onPress} style={filledButtonIconStyles.filledButtonIcon} android_ripple={{color: 'rgba(242, 242, 242, .6)'}}>
-            <Icon color={appColors.primaryColor} name={iconName} size={16}/>
-            <Text style={filledButtonIconStyles.filledButtonIconText}>{text}</Text>
-        </Pressable>
+        <View style={{ borderRadius: 8, overflow: "hidden" }}>
+            <Pressable onPress={onPress} style={filledButtonIconStyles.filledButtonIcon} android_ripple={{ color: 'rgba(242, 242, 242, .6)' }}>
+                <Icon color={appColors.primaryColor} name={iconName} size={16} />
+                <Text style={filledButtonIconStyles.filledButtonIconText}>{text}</Text>
+            </Pressable>
+        </View>
     );
 };
 

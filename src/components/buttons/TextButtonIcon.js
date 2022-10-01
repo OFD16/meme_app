@@ -1,13 +1,15 @@
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Text, Pressable, View } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import { appColors } from "../../constants";
 
 export default function TextButtonIcon({ onPress, text, iconName }) {
     return (
-        <Pressable onPress={onPress} style={textButtonIconStyles.textButtonIcon} android_ripple={{color: 'rgba(13, 13, 11, .2)'}}>
-            <Icon name={iconName} size={16}/>
-            <Text style={textButtonIconStyles.textButtonIconText}>{text}</Text>
-        </Pressable>
+        <View style={{ borderRadius: 8, overflow: "hidden" }}>
+            <Pressable onPress={onPress} style={textButtonIconStyles.textButtonIcon} android_ripple={{ color: 'rgba(13, 13, 11, .2)' }}>
+                <Icon name={iconName} size={16} />
+                <Text style={textButtonIconStyles.textButtonIconText}>{text}</Text>
+            </Pressable>
+        </View>
     );
 };
 
